@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\Request\**" />
+    <Compile Remove="Models\Response\**" />
+    <EmbeddedResource Remove="Models\Request\**" />
+    <EmbeddedResource Remove="Models\Response\**" />
+    <None Remove="Models\Request\**" />
+    <None Remove="Models\Response\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="AppConfiguration\ConnectionSettings.cs" />
+    <Compile Remove="Interfaces\Repositories\IClientesRepository.cs" />
+    <Compile Remove="Interfaces\Repositories\IConnection.cs" />
+    <Compile Remove="Interfaces\Service\IAcessosClienteService.cs" />
+    <Compile Remove="Interfaces\Service\IClientesService.cs" />
+    <Compile Remove="Interfaces\Service\IExtracaoETLService.cs" />
+    <Compile Remove="Interfaces\Service\IServiceBusService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+</Project>

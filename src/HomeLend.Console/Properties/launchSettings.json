@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Homelend.Console": {
+      "commandName": "Project",
+      "commandLineArgs": "\"Joao\" \"Silva\"  \"joao.silva@gmail.com\" \"01/05/2000\" \"1\"",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
